@@ -11,3 +11,11 @@
 footer .container .row{
     padding-top: 20px;
 }
+
+.row-history{
+    min-height: 400px; 
+}
+
+.row-persons{
+    padding: 0 0 10px;
+}
