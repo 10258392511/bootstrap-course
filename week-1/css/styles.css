@@ -1,0 +1,13 @@
+.jumbotron{
+    background-color: #BE96EC;
+    color: floralwhite;
+    margin-bottom: 5px;
+}
+
+.footer{
+    background-color: rgb(225, 185, 247);
+}
+
+footer .container .row{
+    padding-top: 20px;
+}

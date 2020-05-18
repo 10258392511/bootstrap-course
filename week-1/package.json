@@ -1,0 +1,24 @@
+{
+  "name": "week-1",
+  "version": "1.0.0",
+  "description": "week 1 assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10258392511/bootstrap-course.git"
+  },
+  "author": "Zhexin Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/10258392511/bootstrap-course/issues"
+  },
+  "homepage": "https://github.com/10258392511/bootstrap-course#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
