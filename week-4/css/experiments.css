@@ -1,0 +1,41 @@
+body {
+  color: #CCC; }
+
+.icon-40px {
+  height: 40px; }
+
+.icon-50px {
+  height: 50px; }
+
+.icon-60px {
+  height: 60px; }
+
+p {
+  height: 100px; }
+
+p {
+  width: 100px; }
+
+#large-height {
+  height: 32; }
+
+nav {
+  color: #CCC; }
+
+nav p {
+  height: 50px; }
+
+nav div {
+  height: 100px; }
+
+.text-bold {
+  color: #CCC;
+  font-weight: bold;
+  line-height: 1.5em; }
+
+.div-message, #p-message {
+  color: #516734;
+  background-color: floralwhite; }
+
+#p-message {
+  line-height: 100px; }

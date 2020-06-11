@@ -1,0 +1,81 @@
+$color: #CCC;
+@debug $color;
+
+@debug "color is #{$color}";
+
+@debug "this is a test #{$color}";
+
+body{
+    color: $color;
+}
+
+$sizes: 40px, 50px, 60px;
+@each $size in $sizes{
+    .icon-#{$size}{
+        height: $size;
+    }
+    @debug $size;
+}
+
+$styles: ("height": 100px, "width": 100px);
+$selector: p;
+@each $key, $style in $styles{
+    p{
+        #{$key}: $style;
+    }
+    @debug "#{$key}, #{$style}";
+}
+
+@function pow($base, $exp){
+    $result: 1;
+    @for $_ from 1 through $exp{
+        $result: $result*$base;
+    }
+    @return $result;
+}
+
+#large-height{
+    height: pow(2, 5);
+    @debug "#{pow(2, 5)}";
+}
+
+// @use "sass:list";
+@debug nth($sizes, 1);
+@debug $sizes;
+@debug map-get($styles, "height");
+
+nav{
+    color: $color;
+    p{
+        height: 50px;
+    }
+    div{
+        height: 100px; 
+    }
+}
+
+@mixin text-styles($color, $is_bold: false){
+    color: $color;
+    @if $is_bold{
+        font-weight: bold;
+    }
+}
+
+.text-bold{
+    @include text-styles($color, true);
+    line-height: 1.5em;
+}
+
+%message-shared{
+    color: #516734;
+    background-color: floralwhite;
+}
+
+.div-message{
+    @extend %message-shared;
+}
+
+#p-message{
+    @extend %message-shared;
+    line-height: 100px;
+}
